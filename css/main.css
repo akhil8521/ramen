@@ -10,10 +10,33 @@ body{
     padding: 14px;
 }
 
+.container{
+    position: relative;
+}
+
+.ingredients-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.directions-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 45%;
+}
 
 p{
-    font-size: 1.1em;
-    line-height: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.6em;
 }
 
 .ramen-banner-img{
@@ -23,26 +46,38 @@ p{
 }
 
 .ramen-img{
-    height: 200px;
-    width: 300px;
+    height: 360px;
+    width: 360px;
     object-fit: contain;
-    transition: width 2s;
 }
 
-.ramen-img:hover {
-    width: 400px;
-  }
+.serve-step-image{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.serve-step3-image{
+    height: 320px;
+    width: 320px;
+    object-fit: contain;
+}
+
+.vl {
+    border-left: 2px solid white;
+    height: 380px;
+}
 
 
 
 li{
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.6em;
 }
 
 .glow{
     font-size: 2.1em;
-    color: #c6e2ff;
+    color: yellow;
     margin: 0px;
     text-align: center;
     animation: .08s ease-in-out infinite glow;
@@ -72,5 +107,5 @@ li{
 
 
 h2{
-    color: #c6e2ff;
+    color: yellow;
 }
